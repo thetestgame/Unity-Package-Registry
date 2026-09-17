@@ -12,8 +12,8 @@
     "types": "wrangler types"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Jordan Maxwell",
+  "license": "MIT",
   "devDependencies": {
     "typescript": "^7.0.2",
     "wrangler": "^4.134.0"
