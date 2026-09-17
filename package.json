@@ -1,0 +1,21 @@
+{
+  "name": "unity-package-registry",
+  "version": "1.0.0",
+  "description": "A Unity package manager compatible NPM registry hosted on Cloudflare Workers.",
+  "main": "src/index.ts",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit",
+    "types": "wrangler types"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^7.0.2",
+    "wrangler": "^4.134.0"
+  }
+}

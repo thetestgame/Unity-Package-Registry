@@ -1,0 +1,28 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "unity-package-registry",
+	"main": "src/index.ts",
+	"compatibility_date": "2026-09-17",
+	"observability": {
+		"enabled": true,
+		"traces": {
+			"enabled": true
+		}
+	},
+	"r2_buckets": [
+		{
+			"binding": "REGISTRY_BUCKET",
+			"bucket_name": "unity-package-registry"
+		},
+		{
+			"bucket_name": "unity-package-registry",
+			"binding": "unity_package_registry"
+		}
+	],
+	"vars": {
+		"REQUIRE_AUTH_FOR_READ": "false",
+		"GITHUB_PROXY_SCOPES": "@thetestgame",
+		"GITHUB_MIRROR_TTL_SECONDS": "300",
+		"GITHUB_INDEX_TTL_SECONDS": "600"
+	}
+}

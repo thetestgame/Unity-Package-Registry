@@ -1,0 +1,13 @@
+# Copy this file to .dev.vars for local development (wrangler dev).
+# In production, set the same variable with:
+#   npx wrangler secret put AUTH_TOKENS
+#
+# Comma-separated list of bearer tokens allowed to publish/unpublish and,
+# if REQUIRE_AUTH_FOR_READ=true, to read packages/tarballs.
+AUTH_TOKENS=change-me-to-a-long-random-token
+
+# GitHub Packages proxy (optional): set GITHUB_PROXY_SCOPES in wrangler.jsonc
+# ("@myorg,@myuser") to enable, and a GITHUB_TOKEN here / via
+# `wrangler secret put GITHUB_TOKEN` in production. The token needs
+# `read:packages` (and `repo` too if any proxied packages are private).
+GITHUB_TOKEN=ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
